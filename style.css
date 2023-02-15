@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Grey: hsl(204, 43%, 93%);
+  --Greyish-Blue: hsl(218, 22%, 67%);
+  --Body-Font: 'Karla', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--Body-Font);
+  background-color: var(--Light-Grey);
+}
+
+main.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 2rem;
+  max-width: 375px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 8px 20px #0000002d;
+}
+
+/* INTRODUCTION SECTION */
+
+.intro {
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.intro .join {
+  color: var(--Cyan);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.intro .guarentee {
+  color: var(--Bright-Yellow);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.intro p {
+  color: var(--Greyish-Blue);
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/* SUBSCRIBE SECTION */
+
+.subscribe {
+  background-color: var(--Cyan);
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.subscribe h2 {
+  margin-bottom: 2.5rem;
+}
+
+.monthly-cost {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.per-month {
+  font-size: 1rem;
+  margin-left: 0.7rem;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.subscribe p {
+  font-weight: 400;
+  padding-bottom: 2.5rem;
+  margin-top: -1rem;
+}
+
+.sign-up {
+  text-align: center;
+  margin: 0.5rem 0 2rem 0;
+  width: 100%;
+}
+.sign-up-btn {
+  background-color: var(--Bright-Yellow);
+  padding: 1rem 6.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+/* WHY US SECTION */
+
+.why-us {
+  background-color: hsl(179, 64%, 51%);
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.why-us h2 {
+  margin-bottom: 1.5rem;
+}
+
+.why-us ul {
+  list-style-type: none;
+  color: hsla(0, 0%, 100%, 0.5);
+  line-height: 1.4rem;
+}
+
+/* FOOTER */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: var(--Bright-Yellow);
+}
+
+@media screen and (min-width: 1024px) {
+  .flex {
+    display: flex;
+    width: 100%;
+  }
+
+  .card {
+    max-width: 650px;
+  }
+
+  .subscribe,
+  .why-us {
+    width: 100%;
+  }
+
+  .intro,
+  .subscribe,
+  .why-us {
+    padding: 2rem;
+  }
+
+  .sign-up-btn {
+    padding: 1rem 6rem;
+  }
+}
